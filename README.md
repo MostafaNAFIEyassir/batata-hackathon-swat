@@ -1,24 +1,5 @@
 # batata_hackathon
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
-# batata-hackathon-swat
+iOS | Android
+:-: | :-:
+<video src='https://user-images.githubusercontent.com/119861783/212833780-726bcee7-a2f8-4dcf-a15a-0f8241687815.mp4' width=90% controls autoplay> | <video src='https://user-images.githubusercontent.com/119861783/212833373-d45448ea-d0e6-4002-82a6-693a6593b65f.webm' width=90% controls autoplay>
