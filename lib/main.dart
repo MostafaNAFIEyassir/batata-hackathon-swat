@@ -1,4 +1,4 @@
-import 'package:batata_hackathon/widgets/app_buttons.dart';
+import 'package:batata_hackathon/widgets/button_widget.dart';
 import 'package:batata_hackathon/widgets/dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  bool isEnabled = false;
+  bool isContinueButtonEnabled = false;
 }
 
 class MyHomePage extends StatefulWidget {
@@ -38,15 +38,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final controller = TextEditingController();
+  final textEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     final appState = context.watch<MyAppState>();
 
-    controller.addListener(() {
+    textEditingController.addListener(() {
       setState(() {
-        appState.isEnabled = controller.text.isNotEmpty;
+        appState.isContinueButtonEnabled = textEditingController.text.isNotEmpty;
       });
     });
 
@@ -75,16 +75,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   FilteringTextInputFormatter.digitsOnly
                 ],
                 decoration: textFieldInputDecoration,
-                controller: controller,
+                controller: textEditingController,
               ),
             ),
             SizedBox(height: 50),
             ButtonWidget(
               text: "Continue",
-              press: appState.isEnabled
+              press: appState.isContinueButtonEnabled
                   ? () {
                       showAlertDialog(
-                          context, widget.title, "Enjoy your ${controller.text} kilos of kebda!");
+                          context, widget.title, "Enjoy your ${textEditingController.text} kilos of kebda!");
                     }
                   : null,
             )

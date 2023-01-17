@@ -6,6 +6,7 @@ class ButtonWidget extends StatelessWidget {
   final Color enabledBackgroundColor;
   final Color textColor;
   final Color disabledBackgroundColor;
+
   ButtonWidget({
     super.key,
     required this.text,
@@ -14,6 +15,7 @@ class ButtonWidget extends StatelessWidget {
     this.disabledBackgroundColor = Colors.grey,
     this.textColor = Colors.white,
   });
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -22,12 +24,12 @@ class ButtonWidget extends StatelessWidget {
       width: size.width * 0.8,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8),
-        child: ElevButton(),
+        child: _customElevatedButton(),
       ),
     );
   }
 
-  Widget ElevButton() {
+  Widget _customElevatedButton() {
     return ElevatedButton(
       onPressed: press,
       style: ElevatedButton.styleFrom(
