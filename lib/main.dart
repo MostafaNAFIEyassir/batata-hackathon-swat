@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
               press: appState.isEnabled
                   ? () {
                       showAlertDialog(
-                          context, widget.title, "Enjoy your kebda!");
+                          context, widget.title, "Enjoy your ${controller.text} kilos of kebda!");
                     }
                   : null,
             )
