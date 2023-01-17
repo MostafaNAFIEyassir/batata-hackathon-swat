@@ -6,12 +6,10 @@ class ButtonWidget extends StatelessWidget {
   final Color enabledBackgroundColor;
   final Color textColor;
   final Color disabledBackgroundColor;
-  bool isEnabled;
   ButtonWidget({
     super.key,
     required this.text,
     required this.press,
-    required this.isEnabled,
     this.enabledBackgroundColor = Colors.black,
     this.disabledBackgroundColor = Colors.grey,
     this.textColor = Colors.white,
